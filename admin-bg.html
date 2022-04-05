@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <title>Kanade</title>
+</head>
+<body>
+    <ul class="nav nav-pills navbar-expand-sm bg-dark justify-content-center" id="myTab" role="tablist">
+        <li class="navbar-brand text-white" >
+            Kanade
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#hell" href="/">会议中心</button>
+        </li>
+        <li class="nav-item dropdown" role="presentation">
+            <button class="nav-link dropdown-toggle" id="messages-tab" data-bs-toggle="dropdown" data-bs-target="#meeting" >我的会议</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" data-bs-toggle="tab" href="/test.html">
+                    学测评分
+                </a>
+                <a class="dropdown-item" data-bs-toggle="tab" href="/delegate.html">
+                    代表总览
+                </a>
+                <a class="dropdown-item" data-bs-toggle="tab" href="/seat.html">
+                    席位分配
+                </a>
+                <a class="dropdown-item" data-bs-toggle="tab" href="/BG.html">
+                    BG上传
+                </a>
+            </div>
+        </li>
+    </ul>
+<main>
+    <div class="container p-5 my-5 border">
+        <div class="list-group">
+            <button type="button" class="btn list-group-item list-group-item-action" data-bs-toggle="modal" data-bs-target="#bg">NBMUNAC 2022 BG</li>
+        </div>
+        <div class="modal fade" id="bg" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">问题修改</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
+                            <div class="mb-3">
+                              <label class="form-label">请上传本委BG</label>
+                              <input type="file" class="form-control" name="BG" id="BG" placeholder="" aria-describedby="fileHelpId">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container-fluid bg-dark text-white" style="height: 48px;z-index:-999">
+		<h5 class="px-auto text-center">Kanade</h5>
+	</div>
+</footer>
+    <?php
+
+    ?>
+</body>
+</html>
