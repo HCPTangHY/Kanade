@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+    <title>Kanade</title>
+</head>
+<body>
+    <ul class="nav nav-pills navbar-expand-sm bg-dark justify-content-center" id="myTab" role="tablist">
+        <li class="navbar-brand text-white" >
+            Kanade
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#hell" href="/">会议中心</button>
+        </li>
+        <li class="nav-item dropdown" role="presentation">
+            <button class="nav-link dropdown-toggle" id="messages-tab" data-bs-toggle="dropdown" data-bs-target="#meeting" >我的会议</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" data-bs-toggle="tab" href="/test.html">
+                    学测评分
+                </a>
+                <a class="dropdown-item" data-bs-toggle="tab" href="/delegate.html">
+                    代表总览
+                </a>
+                <a class="dropdown-item" data-bs-toggle="tab" href="/seat.html">
+                    席位分配
+                </a>
+                <a class="dropdown-item" data-bs-toggle="tab" href="/BG.html">
+                    BG上传
+                </a>
+            </div>
+        </li>
+    </ul>
+<main>
+    <div class="container p-5 my-5 border">
+        <p class="h3">委员会管理</p>
+        <div class="list-group">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-lg border" data-bs-toggle="modal" data-bs-target="#bgimg">
+                <img src="/img/stars.png">
+            </button>
+            <button type="button" class="btn btn-lg border" data-bs-toggle="modal" data-bs-target="#Cname">
+                Stellrais委员会
+            </button>
+            <button type="button" class="btn btn-lg border" data-bs-toggle="modal" data-bs-target="#Ctext">
+                <p>
+                    议题
+                </p>
+            </button>
+            <button type="button" class="btn btn-lg border" data-bs-toggle="modal" data-bs-target="#dm">
+                学术团队
+            </button>
+            <button type="button" class="btn btn-lg border" data-bs-toggle="modal" data-bs-target="#rule">
+                议事规则
+            </button>
+            <button type="button" class="btn btn-lg border" data-bs-toggle="modal" data-bs-target="#time">
+                时间节点
+            </button>
+            <button type="button" class="btn btn-lg border" data-bs-toggle="modal" data-bs-target="#jianjie">
+                委员会简介
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="bgimg" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                    <h5 class="modal-title">委员会头图修改</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="mb-3">
+                                  <label for="" class="form-label"></label>
+                                  <input type="file" class="form-control" name="img" id="img" placeholder="传一张图片吧" aria-describedby="fileHelpId">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Cname" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                    <h5 class="modal-title">委员会名称修改</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="mb-3">
+                                  <label for="" class="form-label"></label>
+                                  <input type="text" class="form-control" name="Cname" id="Cname" aria-describedby="helpId" placeholder="委员会名称修改">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="Ctext" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                    <h5 class="modal-title">委员会议题修改</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="mb-3">
+                                  <label for="" class="form-label"></label>
+                                  <textarea class="form-control" name="Ctext" id="Ctext" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="dm" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                    <h5 class="modal-title">委员会名称修改</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="mb-3">
+                                  <label for="" class="form-label"></label>
+                                  <input type="text" name="dm" id="dm" class="form-control" placeholder="请输入DM的Reimu ID" aria-describedby="helpId">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="rule" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                    <h5 class="modal-title">委员会议事规则</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="mb-3">
+                                  <label for="" class="form-label"></label>
+                                  <input type="text" class="form-control" name="rule" id="rule" aria-describedby="helpId" placeholder="委员会议事规则修改">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="time" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                    <h5 class="modal-title">委员会时间节点</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="mb-3">
+                                  <label for="" class="form-label"></label>
+                                  <input type="text" class="form-control" name="time" id="time" aria-describedby="helpId" placeholder="委员会时间节点修改">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="jianjie" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                            <div class="modal-header">
+                                    <h5 class="modal-title">委员会名称修改</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="mb-3">
+                                  <label for="" class="form-label"></label>
+                                  <textarea class="form-control" name="Jj" id="Jj" rows="3"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">保存</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <script>
+                var modelId = document.getElementById('modelId');
+            
+                modelId.addEventListener('show.bs.modal', function (event) {
+                      // Button that triggered the modal
+                      let button = event.relatedTarget;
+                      // Extract info from data-bs-* attributes
+                      let recipient = button.getAttribute('data-bs-whatever');
+            
+                    // Use above variables to manipulate the DOM
+                });
+            </script>
+            
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container-fluid bg-dark text-white" style="height: 48px;z-index:-999">
+		<h5 class="px-auto text-center">Kanade</h5>
+	</div>
+</footer>
+    <?php
+
+    ?>
+</body>
+</html>
